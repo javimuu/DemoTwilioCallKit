@@ -1,0 +1,6 @@
+framework module Pods_DemoDenwa {
+  umbrella header "Pods-DemoDenwa-umbrella.h"
+
+  export *
+  module * { export * }
+}

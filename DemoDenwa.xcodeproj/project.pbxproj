@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C1569A702722CCEF9D7D9EE /* Pods_DemoDenwa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E390B4ED0D7FDC692F754A0 /* Pods_DemoDenwa.framework */; };
 		36F7C4042111527500F13B07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7C4032111527500F13B07 /* AppDelegate.swift */; };
 		36F7C4062111527500F13B07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7C4052111527500F13B07 /* ViewController.swift */; };
 		36F7C4092111527500F13B07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36F7C4072111527500F13B07 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E390B4ED0D7FDC692F754A0 /* Pods_DemoDenwa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoDenwa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36F7C4002111527500F13B07 /* DemoDenwa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoDenwa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36F7C4032111527500F13B07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36F7C4052111527500F13B07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		36F7C40A2111527800F13B07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36F7C40D2111527800F13B07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36F7C40F2111527800F13B07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F47B74F4387276665862935 /* Pods-DemoDenwa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoDenwa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoDenwa/Pods-DemoDenwa.debug.xcconfig"; sourceTree = "<group>"; };
+		43A522EC8B3F089B521A9CC7 /* Pods-DemoDenwa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoDenwa.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoDenwa/Pods-DemoDenwa.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C1569A702722CCEF9D7D9EE /* Pods_DemoDenwa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				36F7C4022111527500F13B07 /* DemoDenwa */,
 				36F7C4012111527500F13B07 /* Products */,
+				529936A7337C7F9453C41556 /* Pods */,
+				9A1262296B59F8AB53BD9C41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = DemoDenwa;
 			sourceTree = "<group>";
 		};
+		529936A7337C7F9453C41556 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F47B74F4387276665862935 /* Pods-DemoDenwa.debug.xcconfig */,
+				43A522EC8B3F089B521A9CC7 /* Pods-DemoDenwa.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9A1262296B59F8AB53BD9C41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E390B4ED0D7FDC692F754A0 /* Pods_DemoDenwa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36F7C4122111527800F13B07 /* Build configuration list for PBXNativeTarget "DemoDenwa" */;
 			buildPhases = (
+				56B293EF3C296756C5C71D7B /* [CP] Check Pods Manifest.lock */,
 				36F7C3FC2111527500F13B07 /* Sources */,
 				36F7C3FD2111527500F13B07 /* Frameworks */,
 				36F7C3FE2111527500F13B07 /* Resources */,
+				1815C7D12BEB72B39B49EDEC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1815C7D12BEB72B39B49EDEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DemoDenwa/Pods-DemoDenwa-frameworks.sh",
+				"${PODS_ROOT}/TwilioVoice/TwilioVoice.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioVoice.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoDenwa/Pods-DemoDenwa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56B293EF3C296756C5C71D7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoDenwa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		36F7C3FC2111527500F13B07 /* Sources */ = {
@@ -278,10 +343,11 @@
 		};
 		36F7C4132111527800F13B07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F47B74F4387276665862935 /* Pods-DemoDenwa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 25HJ68HBZM;
+				DEVELOPMENT_TEAM = 4G769DZVB9;
 				INFOPLIST_FILE = DemoDenwa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -296,10 +362,11 @@
 		};
 		36F7C4142111527800F13B07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43A522EC8B3F089B521A9CC7 /* Pods-DemoDenwa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 25HJ68HBZM;
+				DEVELOPMENT_TEAM = 4G769DZVB9;
 				INFOPLIST_FILE = DemoDenwa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
