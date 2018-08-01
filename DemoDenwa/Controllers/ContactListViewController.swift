@@ -10,7 +10,7 @@ import UIKit
 
 class ContactListViewController: UITableViewController {
     fileprivate let cellId = "cellId"
-    fileprivate let dataSources = ["alice", "hanada"]
+    fileprivate let dataSources: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
