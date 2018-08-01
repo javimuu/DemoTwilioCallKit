@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		0C1569A702722CCEF9D7D9EE /* Pods_DemoDenwa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E390B4ED0D7FDC692F754A0 /* Pods_DemoDenwa.framework */; };
 		36F7C4042111527500F13B07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7C4032111527500F13B07 /* AppDelegate.swift */; };
-		36F7C4062111527500F13B07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7C4052111527500F13B07 /* ViewController.swift */; };
+		36F7C4062111527500F13B07 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7C4052111527500F13B07 /* ContactListViewController.swift */; };
 		36F7C4092111527500F13B07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36F7C4072111527500F13B07 /* Main.storyboard */; };
 		36F7C40B2111527800F13B07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36F7C40A2111527800F13B07 /* Assets.xcassets */; };
 		36F7C40E2111527800F13B07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36F7C40C2111527800F13B07 /* LaunchScreen.storyboard */; };
+		36F7C4182111591C00F13B07 /* ContactListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7C4172111591C00F13B07 /* ContactListViewCell.swift */; };
+		36F7C41B21115DFE00F13B07 /* CallDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7C41A21115DFE00F13B07 /* CallDelegate.swift */; };
+		36F7C41D21115E3B00F13B07 /* PhoneConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7C41C21115E3B00F13B07 /* PhoneConstants.swift */; };
+		36F7C41F21115EE700F13B07 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F7C41E21115EE700F13B07 /* UserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E390B4ED0D7FDC692F754A0 /* Pods_DemoDenwa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoDenwa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36F7C4002111527500F13B07 /* DemoDenwa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoDenwa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36F7C4032111527500F13B07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		36F7C4052111527500F13B07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		36F7C4052111527500F13B07 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		36F7C4082111527500F13B07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36F7C40A2111527800F13B07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36F7C40D2111527800F13B07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36F7C40F2111527800F13B07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36F7C4172111591C00F13B07 /* ContactListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewCell.swift; sourceTree = "<group>"; };
+		36F7C41A21115DFE00F13B07 /* CallDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDelegate.swift; sourceTree = "<group>"; };
+		36F7C41C21115E3B00F13B07 /* PhoneConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConstants.swift; sourceTree = "<group>"; };
+		36F7C41E21115EE700F13B07 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		3F47B74F4387276665862935 /* Pods-DemoDenwa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoDenwa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoDenwa/Pods-DemoDenwa.debug.xcconfig"; sourceTree = "<group>"; };
 		43A522EC8B3F089B521A9CC7 /* Pods-DemoDenwa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoDenwa.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoDenwa/Pods-DemoDenwa.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,14 +69,42 @@
 		36F7C4022111527500F13B07 /* DemoDenwa */ = {
 			isa = PBXGroup;
 			children = (
+				36F7C41921115DE100F13B07 /* CallProvider */,
+				36F7C416211158F600F13B07 /* Controllers */,
+				36F7C415211158E100F13B07 /* Views */,
 				36F7C4032111527500F13B07 /* AppDelegate.swift */,
-				36F7C4052111527500F13B07 /* ViewController.swift */,
 				36F7C4072111527500F13B07 /* Main.storyboard */,
 				36F7C40A2111527800F13B07 /* Assets.xcassets */,
 				36F7C40C2111527800F13B07 /* LaunchScreen.storyboard */,
 				36F7C40F2111527800F13B07 /* Info.plist */,
 			);
 			path = DemoDenwa;
+			sourceTree = "<group>";
+		};
+		36F7C415211158E100F13B07 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				36F7C4172111591C00F13B07 /* ContactListViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		36F7C416211158F600F13B07 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				36F7C4052111527500F13B07 /* ContactListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		36F7C41921115DE100F13B07 /* CallProvider */ = {
+			isa = PBXGroup;
+			children = (
+				36F7C41A21115DFE00F13B07 /* CallDelegate.swift */,
+				36F7C41C21115E3B00F13B07 /* PhoneConstants.swift */,
+				36F7C41E21115EE700F13B07 /* UserDefaults.swift */,
+			);
+			path = CallProvider;
 			sourceTree = "<group>";
 		};
 		529936A7337C7F9453C41556 /* Pods */ = {
@@ -200,7 +236,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36F7C4062111527500F13B07 /* ViewController.swift in Sources */,
+				36F7C41B21115DFE00F13B07 /* CallDelegate.swift in Sources */,
+				36F7C4182111591C00F13B07 /* ContactListViewCell.swift in Sources */,
+				36F7C41F21115EE700F13B07 /* UserDefaults.swift in Sources */,
+				36F7C4062111527500F13B07 /* ContactListViewController.swift in Sources */,
+				36F7C41D21115E3B00F13B07 /* PhoneConstants.swift in Sources */,
 				36F7C4042111527500F13B07 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
